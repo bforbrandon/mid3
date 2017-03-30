@@ -1,9 +1,9 @@
-all: mid3
+all: mid3 mid3test
 
 mid3: mid3.cpp
 	g++ mid3.cpp -Wall -D MAIN -omid3
 
-mid3: mid3.cpp
+mid3test: mid3.cpp
 	g++ mid3.cpp -Wall -D UTEST -omid3test
 
 clean:
